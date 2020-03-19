@@ -1,0 +1,69 @@
+@relation 'series'
+
+@attribute nombre string
+@attribute generoPrincipal {drama,comedia,sitcom,crimen,action,misterio,musical,lgbt,politica,tragedia,documentario}
+@attribute generoSecundario {drama,comedia,sitcom,crimen,action,misterio,musical,lgbt,politica,tragedia,documentario}
+@attribute paisOrigin { USA, UK }
+@attribute cantTemporadas numeric
+@attribute cantEpisodios numeric
+@attribute duracionEpisodios numeric
+@attribute personajePrincipal string
+@attribute transmision { CBS,FX,HBO,TNT,FOX,NBC,TheCW,Disney,PrimeVideo,USANetwork,CartoonNetwork,Netflix,Nickelodeon,ComedyCentral,Channel4,Fox,IFC,AMC,ABC,SundanceTV,BBC }
+@attribute setupCamara { multi-camara,unica-camara,animacion }
+@attribute anioLanzamiento { 2009,2016,2013,2011,2010,2014,2012,2015,2018,2017,2019,1990,2008 }
+@attribute lenguajeOriginal { ingles, spanglish }
+@attribute imdbRating numeric 
+@attribute tomatoRating numeric
+@attribute tomatoAudienciaRation numeric
+
+@data
+"The Good Wife",drama,crimen,USA,7,156,50,"Alicia Florrick",CBS,multi-camara,2009,ingles,8.3,94,92
+"Baskets",comedia,drama,USA,4,40,25,"Chip Baskets",FX,unica-camara,2016,ingles,7.5,92,87
+"Banshee",drama,crimen,USA,4,38,59,"Lucas Hood",HBO,multi-camara,2013,ingles,8.4,89,90
+"Men of a Certain Age",drama,comedia,USA,2,22,43,"Joe",TNT,multi-camara,2009,ingles,8,94,100
+"New Girl",sitcom,?,USA,7,146,24,"Jessica Day",FOX,unica-camara,2011,ingles,7.7,94,82
+"Parenthood",drama,comedia,USA,6,103,43,"Peter Krause",NBC,multi-camara,2010,ingles,8.2,88,95
+"Jane The Virgin",comedia,drama,USA,5,100,43,"Jane Gloriana Villanueva",TheCW,unica-camara,2014,spanglish,7.8,100,86
+"Gravity Falls",comedia,misterio,USA,2,40,24,"Dipper Pines",Disney,animacion,2012,ingles,8.9,100,98
+"Transparent",comedia,drama,USA,5,41,31,"Maura Plefferman",PrimeVideo,multi-camara,2014,ingles,7.8,90,77
+"Mr. Robot",drama,crimen,USA,4,45,65,"Elliot Alderson",USANetwork,unica-camara,2015,ingles,8.5,98,94
+"Steven Universe",drama,comedia,USA,5,160,11,"Steven Universe",CartoonNetwork,animacion,2013,ingles,8.2,100,91
+"Girls",comedia,drama,USA,6,62,41,"Hannah Helene Horvath",HBO,unica-camara,2012,ingles,7.3,89,100
+"Pose",drama,musical,USA,2,18,60,"Mj Rodriguez",FX,multi-camara,2018,ingles,8.6,96,87
+"Master of None",comedia,?,USA,2,20,30,"Dev",Netflix,multi-camara,2015,ingles,8.3,100,90
+"You’re the Worst",comedia,drama,USA,5,13,30,"Jimmy Shive-Overly",FX,multi-camara,2014,ingles,8.1,95,89
+"The legend of Korra",drama,comedia,USA,4,52,23,"Korra",Nickelodeon,animacion,2012,ingles,8.4,93,84
+"The Deuce",drama,lgbt,USA,3,25,60,"Vincent Martino",HBO,?,2017,ingles,8.1,93,83
+"Key & Peele",comedia,?,USA,5,53,22,"Luther",ComedyCentral,multi-camara,2012,ingles,8.3,97,93
+"Catastrophe",comedia,?,UK,4,24,24,"Sharon Morris",Channel4,multi-camara,2015,ingles,8.2,98,92
+"The Good Place",comedia,drama,USA,4,53,22,"Eleanor Shellstrop",NBC,unica-camara,2016,ingles,8.2,97,89
+"Enlightened",comedia,drama,USA,2,18,30,"Amy Jellicoe",HBO,multi-camara,2011,ingles,7.5,87,92
+"Treme",drama,musical,USA,4,36,60,"LaDonna Batiste-Williams",HBO,unica-camara,2010,ingles,8.2,96,94
+"Broad City",sitcom,?,USA,5,50,22,"Abbi Abrams",ComedyCentral,multi-camara,2014,ingles,8.4,99,85
+"Veep",comedia,politica,USA,7,65,30,"Selina Meyer",HBO,unica-camara,2012,ingles,8.3,93,88
+"Boardwalk Empire",crimen,drama,USA,5,56,60,"Enoch Nucky Thompson",HBO,unica-camara,2010,ingles,8.5,92,96
+"Watchmen",action,drama,USA,1,9,67,"Angela Abar",HBO,multi-camara,2019,ingles,8.1,95,54
+"Brooklyn Nine-Nine",sitcom,crimen,USA,7,137,23,"Jake Peralta",Fox,unica-camara,2013,ingles,8.4,97,93
+"Brockmire",comedia,?,USA,3,24,23,"Jim Brockmire",IFC,unica-camara,2017,ingles,8.1,98,93
+"Crazy Ex-Girlfriend",comedia,musical,USA,4,62,42,"Rebecca Bunch",TheCW,unica-camara,2015,ingles,7.8,98,83
+"Orange Is the New Black",comedia,crimen,USA,7,91,92,"Piper Chapma",Netflix,unica-camara,2013,ingles,8.1,90,81
+"Review",comedia,tragedia,USA,3,22,22,"Forrest MacNeil",ComedyCentral,unica-camara,2014,ingles,8.3,95,89
+"Bob's Burgers",sitcom,?,USA,10,188,21,"Bob",Fox,animacion,2011,ingles,8.1,91,87
+"Halt and Catch Fire",drama,?,USA,4,40,54,"Joe Macmillan",AMC,multi-camara,2014,ingles,8.4,90,92
+"Hannibal",drama,crimen,USA,3,39,43,"Will Graham",NBC,multi-camara,2013,ingles,8.5,92,94
+"Fargo",crimen,drama,USA,3,30,68,"Lorne Malvo",FX,unica-camara,2014,ingles,8.9,96,93
+"Game of Thrones",action,drama,USA,8,73,57,"Eddard Ned Stark",HBO,multi-camara,2011,ingles,9.3,90,86
+"Twin Peaks",crimen,drama,USA,3,48,60,"Dale Cooper",ABC,unica-camara,1990,ingles,8.5,89,89
+"Community",comedia,?,USA,6,110,26,"Jeff Winger",NBC,unica-camara,2009,ingles,8.5,88,88
+"Terriers",comedia,drama,USA,1,13,45,"Henry Hank Dolworth",Fox,unica-camara,2010,ingles,8.4,92,96
+"Better Call Saul",drama,crimen,USA,5,45,61,"Jimmy McGill",AMC,multi-camara,2015,ingles,8.7,97,96
+"Better Things",comedia,drama,USA,4,35,30,"Sam Fox",FX,unica-camara,2016,ingles,7.7,97,88
+"Rectify",drama,?,USA,4,30,60,"Daniel Holden",SundanceTV,multi-camara,2013,ingles,8.3,95,93
+"Justify",drama,crimen,USA,6,78,53,"Marshal Raylan Givens",FX,multi-camara,2010,ingles,8.6,97,95
+"Atlanta",comedia,drama,USA,2,21,35,"Earnest Marks",FX,unica-camara,2016,ingles,8.6,97,89
+"The Americans",drama,crimen,USA,6,75,59,"Nina Krilova",FX,multi-camara,2013,ingles,8.4,96,93
+"Fleabag",comedia,drama,UK,2,12,28,"Fleabag",BBC,multi-camara,2016,ingles,8.7,100,93
+"BoJack Horseman",comedia,drama,UK,6,77,27,"BoJack Horseman",Netflix,animacion,2014,ingles,8.7,93,95
+"Breaking Bad",drama,crimen,USA,5,62,58,"Walter White",AMC,multi-camara,2008,spanglish,9.5,96,98
+"Parks and Recreation",sitcom,documentario,USA,7,125,42,"Leslie Knope",NBC,unica-camara,2009,ingles,8.6,92,91
+"The leftovers",drama,misterio,USA,3,28,72,"Kevin Garvey",HBO,multi-camara,2014,ingles,8.3,91,89
